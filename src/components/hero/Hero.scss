@@ -1,0 +1,112 @@
+.hero  {
+    z-index: 1000;
+    .block {
+        max-width: 1350px;
+        margin: 0 auto;
+        background: #f2f2f2;
+        position: relative;
+        border-radius: 0 0 30px 30px;
+    }
+    .main-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 140px;
+        padding-top: 30px;
+    }
+    .main {
+        height: 405px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        &__title {
+            text-transform: uppercase;
+            font-family: 'Roboto';
+        }
+        &__title-mad {
+            font-weight: bold;
+            font-size: 48px;
+        }
+        &__title-ui {
+            font-size: 48px;
+            font-weight: 300;
+        }
+        &__descr {
+            max-width: 440px;
+            font-family: 'Roboto';
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .decor {
+            &__circle {
+                height: 20px;
+                width: 20px;
+                border: 4px solid #1b1b1b;
+                border-radius: 50%;
+                position: relative;
+            }
+            &__circle::after {
+                content: "";
+                height: 12px;
+                width: 12px;
+                border: 4px solid #1b1b1b;
+                border-radius: 50%;
+                position: absolute;
+                top: -4px;
+                left: 35px;
+            }
+        }
+        
+    }
+    .design {
+        width: 490px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__data {
+            font-size: 225px;
+            color: #e7e7e7;
+            font-family: 'Roboto';
+            font-weight: bold;
+            position: absolute;
+            transform: rotate(-90deg);
+            opacity: 60%;
+            top: 38.7%;
+            left:34.7%;
+        }
+        &__img {
+            margin-right: 65px;
+        }
+        &__text {
+            transform: rotate(90deg);
+            font-family: 'Roboto';
+            font-weight: 400;
+            font-size: 11px;
+            p {
+                width: 120px;
+            }
+        }
+        &__data-month {
+            width: 120px;
+            height: 50px; 
+            border: 4px solid #949494;
+            position: absolute;
+            top: 73.6%;
+            right: 13.5%;
+            font-size: 18px;
+            font-family: 'Roboto';
+            text-transform: uppercase;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+    }
+    .arrow {
+        position: absolute;
+        right: 6.6%;
+        top: 82%;
+    }
+}

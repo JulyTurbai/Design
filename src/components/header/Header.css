@@ -1,5 +1,6 @@
 .header {
   margin-top: 55px;
+  position: relative;
 }
 .header .block {
   display: flex;
@@ -8,6 +9,7 @@
   max-width: 1350px;
   background: #f2f2f2;
   border-radius: 0 25px 0 0;
+  padding-right: 85px;
 }
 .header .main-menu {
   display: flex;
@@ -18,6 +20,7 @@
   width: 680px;
   height: 60px;
   border-radius: 0 0 35px 0;
+  z-index: 1000;
 }
 .header .main-menu .identica {
   display: flex;
@@ -47,9 +50,24 @@
 }
 .header .main-menu .menu__item {
   margin-right: 50px;
+  cursor: pointer;
 }
 .header .main-menu .menu__item:last-child {
   margin-right: 0;
+}
+.header .search {
+  z-index: 1000;
+}
+.header .search__img {
+  cursor: pointer;
+}
+.header .decor {
+  position: absolute;
+  top: -53px;
+  left: 15.5%;
+}
+.header .decor img {
+  width: 90%;
 }
 .header input {
   display: none;

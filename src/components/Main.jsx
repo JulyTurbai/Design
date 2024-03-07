@@ -1,12 +1,10 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import Home from './Home';
 
 const Main = () => {
     return (
         <div className='main'>
-            
-            <Outlet />
-
+            <Home />
         </div>
     );
 };

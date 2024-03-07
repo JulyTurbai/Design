@@ -1,26 +1,30 @@
 .header {
+    position: relative;
     margin-top: 55px;
     .block {
+        max-width: 1350px;
+        margin: 0 auto;
+        background: #f2f2f2;
+        border-radius: 0 25px 0 0;
+        position: relative;
+    } 
+    .main-block {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: 1350px;
-        background: #f2f2f2;
-        border-radius: 0 25px 0 0;
     }
     .main-menu {
         display: flex;
         justify-content: center;
         align-items: center;
         text-transform: uppercase;
-        background: #121212;
-        width: 680px;
         height: 60px;
-        border-radius: 0 0 35px 0;
+        z-index: 1000;
         .identica {
             display: flex;
             justify-content: center;
             align-items: center;
+            z-index: 1000;
             &__img {
                 margin-right: 10px;
             }
@@ -37,6 +41,7 @@
             color: #868686;
             font-family: "Roboto";
             font-weight: bold;
+            z-index: 10000;
             &__items {
                 display: flex;
                 justify-content: center;
@@ -44,10 +49,34 @@
             }
             &__item {
                 margin-right: 50px;
+                cursor: pointer;
             }
             &__item:last-child {
                 margin-right: 0;
             }
+        }
+        &__decor {
+            width: 670px;
+            height: 60px;
+            background: #101010;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 0 0 35px 0;
+        }
+    }
+    .search {
+        z-index: 1000;
+        &__img {
+            cursor: pointer;
+        }
+    }
+    .decor {
+        position: absolute;
+        top: -53px;
+        left: 13%;
+        img {
+            width: 100%;
         }
     }
     input {
