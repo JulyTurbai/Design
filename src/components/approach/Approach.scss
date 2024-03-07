@@ -1,0 +1,90 @@
+.approach {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 160px;
+    margin-top: 290px;
+    padding-bottom: 240px;
+    position: relative;
+    .block {
+        max-width: 950px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h3 {
+        font-size: 106px;
+        font-family: 'Roboto';
+        text-transform: uppercase;
+        font-weight: 300;
+        margin-bottom: 100px;
+    }
+    .bold {
+        font-weight: bold;
+    }
+    .options {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 770px;
+        
+        .option {
+            max-width: 300px;
+                &__number {
+                    font-size: 49px;
+                    font-family: 'Roboto';
+                    font-weight: bold;
+                }
+                &__name {
+                    font-size: 49px;
+                    font-family: 'Roboto';
+                    font-weight: 300;
+                    text-transform: uppercase;
+                }
+                &__descr {
+                    max-width: 300px;
+                    overflow: hidden;
+                    font-size: 21px;
+                    font-weight: 300;
+                    font-family: 'Roboto';
+                }
+                .decor {
+                    margin: 30px 0 50px;
+                    &__circle {
+                        height: 20px;
+                        width: 20px;
+                        border: 4px solid #000000;
+                        border-radius: 50%;
+                        position: relative;
+                    }
+                    &__circle::after {
+                        content: "";
+                        height: 12px;
+                        width: 12px;
+                        border: 4px solid #000000;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: -4px;
+                        left: 35px;
+                    }
+                }
+        }
+    }
+    .slogan {
+        font-size: 55px;
+        font-weight: bold;
+        font-family: 'Roboto';
+        margin-top: 170px;
+        line-height: 40px;
+    }
+    .grey {
+        color: #dcdcdc;
+    }
+    .decoration {
+        position: absolute;
+        top: 0;
+    }
+}

@@ -16,12 +16,12 @@ const Hero = () => {
                                 <div className="decor__circle"></div>
                             </div>
                             <div className="main__descr">
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia ad labore quis ipsa quam similique cupiditate id unde, 
-                                    nisi atque accusantium esse consequuntur perferendis, veritatis, perspiciatis nemo veniam nam mollitia.
-                                    Cupiditate, facere ad hic debitis ipsa quaerat quos labore cum qui deleniti quasi reiciendis perspiciatis 
-                                    voluptate tempore rem reprehenderit eaque odit dicta enim sunt, blanditiis consequatur dolorem, molestiae animi? 
-                                    Quas. Laborum impedit perferendis repellat eligendi, iusto amet sapiente rem. Modi quisquam corrupti voluptatibus
-                                    perspiciatis explicabo, ipsum qui reiciendis
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod  andi tempor incididunt ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo assei consequat. 
+                                    Duis aute irure dolor in reprehenderit in voluptate velit essei cillus dolore eu fugiat nulla pariatur. 
+                                    Excepteur sint occaecat cupidatat non proiden sunt in culpa qui officia deserunt mollit anim id est laborum. 
+                                    Sed ut  problem i perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorem
                                 </p>
                             </div>
                         </div>
