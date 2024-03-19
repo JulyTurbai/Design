@@ -1,0 +1,174 @@
+.projects {
+    padding-top: 300px;
+     position: relative;
+    .block  {
+        .projects-title {
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Roboto';
+            color: #f1f1f1;
+            font-size: 124px;
+            margin-bottom: 120px;
+        }
+        .medium {
+            font-weight: 300;
+        }
+        .more {
+            text-align: center;
+            margin-top: 130px;
+            &__vector {
+                cursor: pointer;
+            }
+            &__vector--up {
+                transform: rotate(180deg);
+                cursor: pointer;
+                        }
+            &__text {
+                color: #f1f1f1;
+                font-family: 'Roboto';
+                font-weight: 200;
+                margin-top: 20px;
+            }
+        }
+    }
+    .cases {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .case {
+            margin-right: 140px;
+            width: 345px;
+            &__img {
+                margin-bottom: 50px;
+            }
+            .name {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                &__title {
+                    font-size: 34px;
+                    color: #f1f1f1;
+                    font-weight: bold;
+                    font-family: 'Roboto';
+                    text-transform: uppercase;
+                    margin-right: 40px;
+                }
+                &__circle {
+                    height: 20px;
+                    width: 20px;
+                    border: 4px solid #f1f1f1;
+                    border-radius: 50%;
+                    position: relative;
+                }
+                &__circle::after {
+                    content: "";
+                    height: 12px;
+                    width: 12px;
+                    border: 4px solid #f1f1f1;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: -4px;
+                    left: 35px;
+                }
+            }
+            &__descr {
+                width: 370px;
+                font-size: 16px;
+                color: #f1f1f1;
+                font-family: 'Roboto';
+                margin-top: 30px;
+            }
+            &--1 {
+                position: relative;
+            }
+            &--2 {
+                margin-right: 0;
+                padding-top: 120px;
+                position: relative;
+            }
+            &--3 {
+                position: relative;
+            }
+            &--4 {
+                margin-right: 0;
+                padding-top: 120px;
+                position: relative;
+            }
+            .date {
+                width: 120px;
+                height: 50px;
+                border: 4px solid #7f7f7f;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #f1f1f1;
+                color: black;
+                text-transform: uppercase;
+                font-family: 'Roboto';
+                font-weight: bold;
+            }
+            .date--1 {
+                position: absolute;
+                top: 59%;
+                left: 82%;
+            }
+            .date--2 {
+                position: absolute;
+                top: 73%;
+                left: 82%;
+            }
+            .date--3 {
+                position: absolute;
+                top: 59%;
+                left: 82%;
+            }
+            .date--4 {
+                position: absolute;
+                top:73%;
+                left: 82%;
+            }
+        }
+    }
+    .hidden-cases {
+        position: absolute;
+        margin-bottom: 300px;
+        animation: hide 1.95s forwards; 
+        margin-top: 120px;
+    }
+    
+    .none {
+        display: none;
+        opacity: 0;
+        top: 95%; 
+    }
+    
+    .block {
+        display: block;
+        animation: show 1.95s forwards;
+    }
+    
+    @keyframes show {
+        0% {
+            top: 80%;
+            opacity: 0;
+        }
+        100% {
+            top: 95%;
+            opacity: 1;
+        }
+    }
+    
+    @keyframes hide {
+        0% {
+            top: 95%; 
+            opacity: 1;
+        }
+    
+        100% {
+            top: 80%; 
+            opacity: 0;
+        }
+    }
+    
+    
+}

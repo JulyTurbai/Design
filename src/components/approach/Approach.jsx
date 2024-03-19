@@ -39,7 +39,7 @@ const Approach = () => {
                 </div>
             </div>
             <div className="decoration">
-                <img src="Design/img/Shape1.png" alt="" />
+                <img src="Design/img/Shape2.png" alt="" />
             </div>
         </div>
     );
